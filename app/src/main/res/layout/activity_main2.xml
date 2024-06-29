@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/customToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/savebtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/fabbtn"
+        android:contentDescription="@string/d_ym_nin_funksiyas_n_buraya_yaz_n"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Save"
+    android:textColor="@color/black"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.95"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.883"
+    android:textSize="18sp"/>
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/img_5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customToolbar" />
+
+    <ImageView
+        android:id="@+id/book"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/img_6"
+        app:layout_constraintStart_toEndOf="@id/arrow"
+        app:layout_constraintTop_toBottomOf="@+id/customToolbar" />
+
+    <ImageView
+        android:id="@+id/someImage"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/img_7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.87"
+        app:layout_constraintBottom_toBottomOf="@+id/book"
+        app:layout_constraintEnd_toEndOf="@+id/book"
+        app:layout_constraintStart_toStartOf="@+id/book"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/heart"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/img_8"
+        app:layout_constraintStart_toEndOf="@id/book"
+        app:layout_constraintTop_toBottomOf="@+id/customToolbar" />
+
+    <ImageView
+        android:id="@+id/paylash"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/img_9"
+        app:layout_constraintStart_toEndOf="@id/heart"
+        app:layout_constraintTop_toBottomOf="@+id/customToolbar" />
+
+    <ImageView
+        android:id="@+id/edit"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/baseline_delete_24"
+        app:layout_constraintStart_toEndOf="@id/paylash"
+        app:layout_constraintTop_toBottomOf="@+id/customToolbar" />
+
+    <EditText
+        android:id="@+id/headText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:text="@string/enter_your_title"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/paylash"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:maxLines="100"
+        android:text="@string/lorem"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headText" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="390dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/bottomnav"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="2dp"
+            android:background="@drawable/bottomnav"
+            android:contentDescription="@string/d_ym_nin_funksiyas_n_buraya_yaz_n"
+            android:drawableStart="@drawable/img_10" />
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@color/black"
+            android:contentDescription="@string/d_ym_nin_funksiyas_n_buraya_yaz_n"
+            android:drawableStart="@drawable/img_11" />
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@color/black"
+            android:contentDescription="@string/d_ym_nin_funksiyas_n_buraya_yaz_n"
+            android:drawableStart="@drawable/img_12" />
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@color/black"
+            android:contentDescription="@string/d_ym_nin_funksiyas_n_buraya_yaz_n"
+            android:drawableStart="@drawable/img_13" />
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bottomnav"
+            android:contentDescription="@string/d_ym_nin_funksiyas_n_buraya_yaz_n"
+            android:drawableStart="@drawable/img_14" />
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@color/black"
+            android:contentDescription="@string/d_ym_nin_funksiyas_n_buraya_yaz_n"
+            android:drawableStart="@drawable/img_15" />
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@color/black"
+            android:contentDescription="@string/d_ym_nin_funksiyas_n_buraya_yaz_n"
+            android:drawableStart="@drawable/img_16" />
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bottomnav"
+            android:contentDescription="@string/d_ym_nin_funksiyas_n_buraya_yaz_n"
+            android:drawableStart="@drawable/img_17" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

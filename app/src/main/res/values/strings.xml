@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">NoteApp</string>
+    <string name="welcome">Welcome</string>
+    <string name="search_for_notes">Search for notes</string>
+    <string name="tue">Tue</string>
+    <string name="_23">23</string>
+    <string name="apr">Apr</string>
+    <string name="all">All</string>
+    <string name="todo">TODO</string>
+    <string name="lorem">Lorem</string>
+    <string name="one" />
+    <string name="save">Save</string>
+    <string name="choose_color">Choose color</string>
+    <string name="enter_your_title">Enter your title</string>
+    <string name="helle">+</string>
+    <string name="bos" />
+    <string name="choose_colorrr">Choose Color</string>
+    <string name="d_ym_nin_funksiyas_n_buraya_yaz_n">Düymənin funksiyasını buraya yazın</string>
+    <string name="title">Title</string>
+    <string name="content">Content</string>
+    <string name="update">Update</string>
+    <string-array name="color_names">
+        <item>Black</item>
+        <item>White</item>
+        <item>Blue</item>
+        <item>Pink</item>
+        <item>DarkYellow</item>
+        <item>green</item>
+        <item>solidyellow</item>
+        <item>solidpink</item>
+    </string-array>
+</resources>
